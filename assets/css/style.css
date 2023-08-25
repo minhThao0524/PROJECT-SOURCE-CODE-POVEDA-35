@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 1022px; */
+}
+.header{
+    background-color: #485342;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo-img{
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    list-style: none;
+}
+.nav  > li > a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-family: popin, sans-serif;
+    font-weight: 600;
+}
+.nav li a{
+    position: relative;
+}
+.menu-main .subnav{
+    list-style: none;
+}
+.nav .subnav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: popin, sans-serif;
+    font-weight: 600;
+}
+.nav .subnav{
+    background-color: #485342;
+    border-radius: 5px;
+    padding: 16px 24px;
+    line-height: 2;
+    position: absolute;
+    content: "";
+    top: 60px;
+    margin-left: 40px;
+    display: none;
+}
+.subnav li a::after,
+.menu-main li a::after{
+    background-color: #fff;
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0;
+    bottom: -5px;
+    left: 0;
+}
+.menu-main i{
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+}
+.subnav li a:hover:after,
+.menu-main li a:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+.menu-main li:hover .subnav{
+    display: block;
+}
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 70px;
+}
+/* end menu */
+.content-section{
+    padding: 60px ;
+    background-image: url(../img/backgr.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 736px;
+}
+.titile{
+    text-align: left;
+    justify-items: flex-start;
+    align-items: flex-start;
+    margin-top: 156px ;
+
+}
+.title-first{
+    color: #fff;
+    font-size: 48px;
+}
+.title-two{   
+    color: #fff;
+    font-size: 130px;
+    font-weight: 400;
+}
+.titile p{
+    color: #fff;
+    line-height: 1.5;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+}
+.set-up-btn{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 3px solid ;
+    border-radius: 32px;
+    padding: 20px 37px; /* Kích thước nút */
+    cursor: pointer;
+    margin-top: 25px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+.set-up-btn:hover{
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+/* end content-section */
+.slider{
+    padding: 100px 0;
+    background-color: #c7cec9;
+}
+.section{
+    text-align: center;
+}
+.slider .content {
+    font-size: 56px;
+    color: #485342;
+    font-weight: 500;
+    font-family:'Jacques Francois', serif;
+}
+.list-main{
+    margin-top: 70px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.list{
+    list-style: none;
+    padding: 10px;
+}
+.list .image{
+    max-width: 100%;
+    height: 368px;
+}
+.list li{
+    padding-top: 25px;
+}
+.list .space{
+    font-size: 32px;
+    color: #485342;
+}
+.slider-element-one .button,
+.list .btn{
+    color: #485342;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 3px solid ;
+    border-radius: 32px;
+    padding: 15px 45px; 
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.slider-element-one .button:hover,
+.list .btn:hover{
+    transition: 0.3s;
+    border: 3px solid #485342;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* end-slider */
+.contcontent_section_two-wrapper-element-one
+.wrapper_element-img-one{
+    width: 612px;
+    max-height: 768px;
+}
+.content_section_three-wrapper-element-one
+.wrapper_element-text-one,
+.content_section_two-wrapper-element-two 
+.wrapper_element-text-one{
+    font-size: 48px;
+    font-family:'Jacques Francois', serif;
+    font-weight: 500;
+    color: #485342;
+}
+.content_section_three-wrapper-element-one
+.wrapper_element-text-two,
+.content_section_two-wrapper-element-two 
+.wrapper_element-text-two,
+.wrapper_element-text-three {
+    margin: 24px 0;
+}
+.content_section_three-wrapper-element-one
+.wrapper_element-text-two,
+.content_section_two-wrapper-element-two
+.wrapper_element-text-three,
+.wrapper_element-text-two{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #485342;
+    line-height: 1.5;
+}
+.content-section-three
+.wrapper_element-btn-one,
+.content-section-two
+.wrapper_element-btn-one{
+    color: #485342;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 3px solid ;
+    border-radius: 32px;
+    padding: 15px 45px; 
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.content-section-two
+button:hover{
+    transition: 0.3s;
+    border: 3px solid #485342;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.content_section_two-wrapper-element-two {
+    margin-right: 130px;
+}
+.content-section-two{
+    padding: 0 60px;
+    background-color: #dbe2dd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content_section_two-wrapper-element-two{
+    margin-right: 130px;
+}
+.content-section-three{
+    margin-top: -5px;
+    background-color: #485342;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content_section_three-wrapper-element-one >
+.wrapper_element-text-two{
+    color: #fff;
+    font-weight: 500;
+}
+.content_section_three-wrapper-element-one >
+.wrapper_element-text-one{
+    color: #fff;
+}
+.content-section-three
+.wrapper_element-btn-one{
+    font-weight: 600;
+    border: 3px soild #fff;
+    color: #fff;
+}
+.content-section-three
+.wrapper_element-btn-one:hover{
+    color: #b0b7b2;
+    border: 3px soild #b0b7b2;
+    background-color: rgba(241, 241, 241, 0.979);
+}
+
+/* end content-secction_wrapper */
+.content-body .heading-first{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+    font-family:'Jacques Francois', serif;
+}
+.content-body .paragraph-one{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    margin: 20px 0;
+    color: #fff;
+}
+.content-body{
+    margin-top: -5px;
+    background-color: #2f3a29;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+/* end-content-body */
+.heading-two .content-size{
+    padding-top: 100px;
+    color: #485342;
+    font-size: 50px;
+    font-weight: 500;
+    font-family:'Jacques Francois', serif;
+}
+.main ul{
+    padding: 0 10px;
+    padding-top: 70px;
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.main ul li{
+    margin-left: 30px;
+}
+.list-img li{
+    list-style: none;
+}
+.list-img .img{
+    max-width: 100%;
+    height: 320px;
+}
+
+.slider-element-one {
+    background-color: #c7cec9;
+    text-align: center;
+}
+.slider-element-one > .button{
+    padding: 10px 35px;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+/* CONTENT SECTION SUBSCRIBE */
+.content-section-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 157px 150px;
+}
+/* content-subscribe-warpper-one */
+/* css color background */
+.content-section-subscribe {
+    background-color: rgb(72, 83, 66);
+    color: #f1f1f1;
+}
+.content-section-subscribe 
+.content-subscribe-warpper-one
+.content-subscribe-element_text_h1 {
+    font-size: 48px;
+}
+.content-subscribe-warpper-one 
+.content-subscribe-element_text_p {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+}
+/* content-subscribe-warpper-one */
+/* content-subscribe-warpper-two */
+.content-section-subscribe
+.content-subscribe-warpper-two {
+    position: relative;
+    top: 40px;
+}
+.content-subscribe-warpper-two
+.content-subscribe-element_text_input {
+    color: 16px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.content-subscribe-warpper-two
+.content-subscribe-element_input {
+    width: 590px;
+    height: 48px;
+    padding: 16px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: rgba(245, 248, 251, .6);
+}
+.content-subscribe-warpper-two
+.content-subscribe-element_input:active {
+    background-color: #fff !important;
+}
+.content-subscribe-warpper-two
+.content-subscribe-element_input:hover {
+    background-color: #fff;
+}
+.content-subscribe-warpper-two 
+.content-subscribe-element_btn {
+    padding: 4px 45px;
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+/* content-subscribe-warpper-two */
+/* CONTENT SECTION SUBSCRIBE *//* end-slider */
+/* Begin css-footer */
+#footer-main
+.footer-section-information{
+    background-color: #b0b7b2;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* cho hai infor cùng nằm ngang */
+.footer-section-element_information{
+    display: flex;
+}
+/* set font và màu */
+.footer-section-element_information
+.footer-section-element_steps-one a{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #485342;
+    line-height: 2;
+}
+.footer-section-element_information
+.footer-section-element_steps-two{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #485342;
+    line-height:2; 
+}
+/* set khoảng cách logo */
+.footer-section-element_logo
+.footer-element-img_logo{
+    margin-left: 70px;
+}
+/* set khaongr cách phần a (infor thứ nhất) */
+.footer-section-element_information
+.footer-section-element_steps-one{
+    margin-right: 290px;
+}
+/* set khoảng cách paahfn infor thứ hai */
+.footer-section-element_information
+.footer-section-element_steps-two{
+    margin-right: 200px;
+}
+/* set font và padding icon */
+.footer-section-element_steps-two
+.icon-btn{
+    font-size: 18px;
+    padding: 10px 6px;
+}
+/* tạo hiệu ứng cho icon */
+.footer-section-element_steps-two
+.icon-btn i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
